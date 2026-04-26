@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<string.h>
+union student
+{
+	int rno;
+	char name[50];
+	float per;
+};
+int main()
+{
+	union student s;
+	printf("enetr roll no :");
+	scanf("%d",&s.rno);
+	printf("enter name :");
+	scanf("%s",&s.name);
+	printf("enter percentage :");
+	scanf("%f",&s.per);
+	printf("%d %s %f",s.rno,s.name,s.per);
+	return 0;
+}
